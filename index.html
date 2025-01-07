@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crumb & Kettle | Artisanal Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <img src="graphics/bread-bold.svg" alt="Crumb & Kettle Logo">
+        </div>
+        <div class="nav-toggle" id="navToggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#about">Our Story</a></li>
+            <li><a href="#workshops">Workshops</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to Crumb & Kettle</h1>
+            <p>Artisanal breads & pastries baked fresh daily</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="cta-button">View Menu</a>
+                <a href="#order" class="cta-button secondary">Order Online</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="daily-special" class="daily-special">
+        <div class="container">
+            <h2>Today's Specials</h2>
+            <div class="specials-grid">
+                <div class="special-item">
+                    <img src="graphics/pexels-pixabay-2135.jpg" alt="Lavender Honey Croissant">
+                    <h3>Lavender Honey Croissant</h3>
+                    <p>$4.50</p>
+                </div>
+                <div class="special-item">
+                    <img src="graphics/pexels-renestrgar-28673749.jpg" alt="Rosemary Olive Sourdough">
+                    <h3>Rosemary Olive Sourdough</h3>
+                    <p>$7.95</p>
+                </div>
+                <div class="special-item">
+                    <img src="graphics/pexels-john-henry-2147678626-29738890.jpg" alt="Maple Pecan Morning Bun">
+                    <h3>Maple Pecan Morning Bun</h3>
+                    <p>$4.25</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <div class="menu-categories">
+                <button class="menu-tab active" data-category="bread">Breads</button>
+                <button class="menu-tab" data-category="pastries">Pastries</button>
+                <button class="menu-tab" data-category="cakes">Cakes</button>
+            </div>
+            <div class="menu-items" id="menuItems">
+                <!-- Menu items will be populated via JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded by sisters Emma and Sarah Bennett, Crumb & Kettle brings traditional baking methods and local ingredients together to create something truly special.</p>
+                    <p>Every morning at 4 AM, our bakers begin their day crafting artisanal breads and pastries that honor both tradition and innovation.</p>
+                </div>
+                <div class="about-image">
+                    <img src="graphics/pexels-olly-3756050.jpg" alt="Inside Crumb & Kettle">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="workshops" class="workshops">
+        <div class="container">
+            <h2>Baking Workshops</h2>
+            <div class="workshop-grid">
+                <div class="workshop-card">
+                    <!-- <img src="images/sourdough-workshop.jpg" alt="Sourdough Workshop"> -->
+                    <h3>Sourdough Basics</h3>
+                    <p>Learn the art of sourdough bread making in this hands-on workshop.</p>
+                    <p class="workshop-details">Next Class: Saturday, 9AM</p>
+                    <button class="sign-up-button">Sign Up</button>
+                </div>
+                <!-- More workshop cards -->
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Visit Us</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Hours</h3>
+                    <p>Monday - Friday: 7AM - 6PM</p>
+                    <p>Saturday - Sunday: 8AM - 4PM</p>
+                    <h3>Location</h3>
+                    <p>123 Division Street</p>
+                    <p>Portland, OR 97123</p>
+                    <h3>Contact</h3>
+                    <p>Phone: (503) 555-0123</p>
+                    <p>Email: hello@crumbandkettle.com</p>
+                </div>
+                <div class="contact-form">
+                    <h3>Special Orders</h3>
+                    <form id="orderForm">
+                        <input type="text" placeholder="Name" required>
+                        <input type="email" placeholder="Email" required>
+                        <textarea placeholder="Tell us about your order" required></textarea>
+                        <button type="submit">Send Request</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <!-- <img src="graphics/bread-bold.svg" alt="Crumb & Kettle Logo"> -->
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 Crumb & Kettle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
